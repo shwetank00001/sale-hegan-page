@@ -1,33 +1,33 @@
-.sales-reportheader-main, .sales-reportheader{
+.sales-listheader-main, .sales-listheader{
     display: flex;
     justify-content:space-between;
     align-items: center;
     background-color: white;
 }
 
-.sales-reportheader-main{
+.sales-listheader-main{
     margin-left: 5%;
     margin-right: 5%;
 }
 
 
 
-.sales-report-header-input{
+.sales-list-header-input{
     display: flex;
     align-items: center;
     margin-top: 0px;
 }
-.sales-report-header-input > input{
+.sales-list-header-input > input{
 
     margin-top: 0px;
 }
 
 @media screen and (max-width: 854px) {
-    .sales-reportheader-main {
+    .sales-listheader-main {
         font-size: small;
         width: 100%;
     }
-    .sales-report-header-input > input{
+    .sales-list-header-input > input{
         display: flex;
         align-items: center;
         width: 70px;

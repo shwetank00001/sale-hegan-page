@@ -1,4 +1,5 @@
 import './SalesList.css'
+import SalesListHeader from './SalesListHeader';
 
 import { React, useEffect, useState, useRef } from "react";
 import { FaRegFilePdf } from "react-icons/fa";
@@ -10,9 +11,11 @@ export default function SalesList (){
 
 return (
     <div className="main-saleslist-file">
-      {/* <salesHeader /> */}
+              
       <div className="saleslist-main">
+        <SalesListHeader /> 
         <div className="saleslist">
+          
           <div className="saleslist-header">
             <h1>SALES LIST</h1>
           </div>
@@ -48,7 +51,7 @@ return (
                 <td>Date</td>
                 <td id='appadd'>SHWETANK</td>
                 <td>SHWETANK</td>
-                <td>SHWETANK</td>
+                <td><span className='span-width'>SHWETANKqqqqqqqqqqqqqqqqqqqqqqqqq</span></td>
                 <td>SHWETANK</td>
                 <td>SHWETANK</td>
                 <td className='action-button-sales-table'>

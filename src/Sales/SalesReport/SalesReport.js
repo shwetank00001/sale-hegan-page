@@ -53,11 +53,12 @@ return (
                 <td>SHWETANK</td>
                 <td>SHWETANK</td>
                 <td>SHWETANK</td>
-                <td className='action-button-sales-table'>
+                <td>Will add button with map</td>
+                {/* <td className='action-button-sales-table'>
                     <button>Add</button>
                     <button>Edit</button>
                     <button>Del</button>
-                </td>
+                </td> */}
               </tr>
 
               
