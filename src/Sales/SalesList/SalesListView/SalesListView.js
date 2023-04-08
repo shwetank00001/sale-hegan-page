@@ -83,9 +83,6 @@ return (
               </div>
           </div>
 
-          <div className='saleslist-view-button'>
-            <button>Submit</button>
-          </div>
 
         </div>
       </div>
