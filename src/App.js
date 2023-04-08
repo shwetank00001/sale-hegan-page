@@ -1,11 +1,12 @@
-import SalesReport from "./Sales/SalesReport/SalesReport";
-import SalesList from "./Sales/SalesList/SalesList"
+// import SalesReport from "./Sales/SalesReport/SalesReport";
+// import SalesList from "./Sales/SalesList/SalesList"
+import SalesListEdit from "./Sales/SalesList/SalesListEdit/SalesListEdit";
 
 function App() {
   return (
     <div>
-      <SalesList />
-      <SalesReport />
+      <SalesListEdit />
+      {/* <SalesReport /> */}
     </div>
   );
 }

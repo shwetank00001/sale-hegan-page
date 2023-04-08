@@ -1,0 +1,894 @@
+.saleslist-edit-main{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: white;
+    width: 80%;
+
+  }
+
+  .saleslist-edit-main{
+    border: 2px solid black;
+  }
+  .saleslist-edit-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A9AE3;
+    color: white;
+    font-size: small;
+    font-style: normal;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .saleslist-edit-input-area{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .table-customer-saleslist-edit{
+    height: 580px;
+    top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: auto;
+  }
+  
+  
+  .table-customer-heading-saleslist-edit > th {
+    position: sticky;
+    top: 0;
+    font-size: small;
+    
+  }
+  
+  
+  .table-top-saleslist-edit{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .show-name-saleslist-edit{
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  
+  .show-name-saleslist-edit > input{
+    margin-top: 10px;
+    width: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ABA4A4;
+  }
+  
+  .search-name-saleslist-edit {
+    display: flex;
+    margin-right: 5%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+
+  .search-name-saleslist-edit > input{
+    margin-top: 10px;
+    width: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ABA4A4;
+  }
+
+  .saleslist-edit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .saleslist-edit-button > button {
+    background-color: #0A9AE3;
+    color: white;
+    width: 350px;
+    height: 46px;
+    border-radius: 5px;
+    font-size: large;
+  }
+  .data-table-saleslist-edit > td > p{
+    text-align: left;
+    overflow: auto;
+  }
+  
+  
+  
+  
+  #customers-saleslist-edit {
+    border-collapse: collapse;
+    width: 100%;
+  
+  
+  }
+  
+  #customers-saleslist-edit td, #customers-saleslist-edit th {
+  
+    padding: 4px;
+  
+    
+  }
+  
+  
+    /* #customers input {
+      width: 90px;
+      height: 20px;
+      background-color:#ffffff ;
+      border: 0px solid;
+      text-align: center;
+    } */
+  .first-saleslist-edit{
+    background-color: #f2f2f2;
+  
+    border: none;
+    width: 50px;
+    height: 20px;
+    border: 0px solid;
+    text-align: center;
+  }
+  
+  .second-saleslist-edit{
+    background-color: #ffffff;
+    border: none;
+    width: 50px;
+    height: 20px;
+    border: 0px solid;
+    text-align: center;
+  }
+  
+  
+  #customers-saleslist-edit tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers-saleslist-edit tr:hover {background-color: #d9d9d9;}
+  
+  #customers-saleslist-edit th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0A9AE3;
+    color: white;
+    
+  }
+  #customers-saleslist-edit tr > td {
+    cursor: pointer;
+  }
+  
+  .span-width{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 8ch;
+
+  }
+  
+  .csv-saleslist-edit, .pdf-saleslist-edit, .copy-saleslist-edit{
+    height: 50px;
+    width: 20px;
+    margin: 10px;
+  }
+  
+  .logo-color-saleslist-edit{
+    background-color: #0A9AE3;
+    padding: 10px;
+    border-radius: 100px;
+    color: white;
+    font-size: xx-large;
+    margin-top: 50%;
+  }
+  
+  button{
+    margin: 3px;
+    cursor: pointer;
+  }
+  
+  .sales-list-buttons-saleslist-edit{
+    margin: 5px;
+  }
+  .add-saleslist-edit{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: x-small;
+    
+  }
+  
+  .update-saleslist-edit{
+    background-color: #0A9AE3;
+    border-radius: 6px;
+    border: #0A9AE3;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: x-small;
+  }
+  
+  .delete-saleslist-edit{
+    background-color: #F91607;
+    border-radius: 6px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-size: x-small;
+  }
+  
+#appadd {
+    white-space: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+  
+.action-button-sales-table{
+    display: flex;
+    justify-content: center;
+}
+  
+.action-button-sales-table > button{
+
+  border-radius: 5px;
+  border: #0A9AE3;
+  width: 50px;
+  padding: 2px;
+  border: 2px solid black
+}
+
+.view-sale-list{
+  background: #0A9AE3;
+  color: white;
+  border: none;
+}
+
+.edit-sale-list{
+  background-color: white;
+  color: black;
+  border: rgb(85, 26, 26);
+}
+
+.del-sale-list{
+  background-color: #F91607;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+  
+  
+  /* FOR MOBILE PPHONE SCREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN */
+  
+  @media screen and (max-width: 854px) {
+    .main-saleslist-edit-file {
+      margin: 5%;
+      width: 300px;
+    }
+    .saleslist-edit-main{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      background-color: white;
+      width: 100%;
+    }
+    .saleslist-edit-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0A9AE3;
+      color: white;
+      font-size: small;
+      height: 30px;
+      width: 300px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    
+    .table-customer-saleslist-edit{
+      height: 280px;
+      margin-left: 0px; 
+      margin-right: 0px; 
+      overflow: auto;
+    }
+    
+    
+    .table-customer-heading-saleslist-edit > th {
+      position: sticky;
+      top: 0;
+      font-size: small;
+    }
+    
+    
+    .table-top-saleslist-edit{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .show-name-saleslist-edit{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 5%;
+      margin-top: 5%;
+    }
+    
+    .show-name-saleslist-edit > input{
+      margin-top: 10px;
+      width: 100px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ABA4A4;
+    }
+    
+    .search-name-saleslist-edit {
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+
+    }
+    .search-name-saleslist-edit > input{
+      margin-top: 10px;
+      width: 100px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ABA4A4;
+    }
+
+    .saleslist-edit-button > button {
+      background-color: #0A9AE3;
+      color: white;
+      width: 100px;
+      height: 26px;
+      border-radius: 5px;
+      font-size: smaller;
+      margin-left: 5%;
+    }
+    .data-table-saleslist-edit > td > p{
+      text-align: left;
+      overflow: auto;
+    }
+    
+    
+    
+    
+    #customers-saleslist-edit {
+      border-collapse: collapse;
+      width: 100%;
+    
+    
+    }
+    
+    #customers-saleslist-edit td, #customers-saleslist-edit th {
+      padding: 8px;
+      
+    }
+    
+    
+      /* #customers input {
+        width: 90px;
+        height: 20px;
+        background-color:#ffffff ;
+        border: 0px solid;
+        text-align: center;
+      } */
+    .first-saleslist-edit{
+      background-color: #f2f2f2;
+      border: none;
+      width: 90px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    .second-saleslist-edit{
+      background-color: #ffffff;
+      border: none;
+      width: 90px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    
+    #customers-saleslist-edit tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers-saleslist-edit tr:hover {background-color: #d9d9d9;}
+    
+    #customers-saleslist-edit th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #0A9AE3;
+      color: white;
+      
+    }
+    #customers-saleslist-edit tr > td {
+      text-align: center;
+      cursor: pointer;
+    
+    }
+    
+    .csv-saleslist-edit, .pdf-saleslist-edit, .copy-saleslist-edit{
+      height: 15px;
+      width: 15px;
+      margin: 15px;
+    }
+    
+    .logo-color-saleslist-edit{
+      background-color: #0A9AE3;
+      padding: 10px;
+      border-radius: 100px;
+      color: white;
+      font-size: xx-large;
+      margin-top: 50%;
+    }
+    
+    button{
+      margin: 3px;
+      cursor: pointer;
+    }
+    
+    .sales-list-buttons-saleslist-edit{
+      margin: 5px;
+    }
+    .add-saleslist-edit{
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px;
+      
+    }
+    
+    .update-saleslist-edit{
+      background-color: #0A9AE3;
+      border-radius: 6px;
+      border: #0A9AE3;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+    }
+    
+    .delete-saleslist-edit{
+      background-color: #F91607;
+      border-radius: 6px;
+      padding: 5px;
+      text-decoration: none;
+      color: white;
+      margin: 5px;
+    }
+
+    .action-button-sales-table{
+      display: flex;
+      justify-content: center;
+  }
+    
+  .action-button-sales-table > button{
+    background: #0A9AE3;
+    border-radius: 0.5rem;
+    border: #0A9AE3;
+    width: 50px;
+    color: white;
+  
+  }
+  
+    
+  }
+  
+  @media screen and (min-width : 855px)  and  (max-width: 1236px){
+    .saleslist-edit-main{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      background-color: white;
+    }
+    .saleslist-edit-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0A9AE3;
+      color: white;
+      font-size:small;
+      height: 50px;
+      width:100%;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 0;
+      margin-right:0;
+    }
+    
+    
+    .table-customer-saleslist-edit{
+      height: 580px;
+      top: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      overflow: auto;
+    }
+    
+    
+    .table-customer-heading-saleslist-edit > th {
+      position: sticky;
+      top: 0;
+      font-size: small;
+    }
+    
+    
+    .table-top-saleslist-edit{
+      display: flex;
+      flex-direction: column; 
+    }
+    
+    .show-name-saleslist-edit{
+      display: flex;
+      align-items: center;
+      
+    }
+    
+    .show-name-saleslist-edit > input{
+      margin-top: 10px;
+      width: 350px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ABA4A4;
+    }
+    
+    .search-name-saleslist-edit {
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+    }
+
+    .saleslist-edit-button > button {
+      background-color: #0A9AE3;
+      color: white;
+      width: 200px;
+      height: 36px;
+      border-radius: 5px;
+      font-size: small;
+      margin-left: 5%;
+    }
+
+    .search-name-saleslist-edit > input{
+      margin-top: 10px;
+      width: 350px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ABA4A4;
+    }
+    .data-table-saleslist-edit > td > p{
+      text-align: left;
+      overflow: auto;
+    }
+    
+    
+    
+    
+    #customers-saleslist-edit {
+      border-collapse: collapse;
+      width: 100%;
+  
+    
+    
+    }
+    
+    #customers-saleslist-edit td, #customers-saleslist-edit th {
+      padding: 8px;
+      
+    }
+    
+    
+      /* #customers input {
+        width: 90px;
+        height: 20px;
+        background-color:#ffffff ;
+        border: 0px solid;
+        text-align: center;
+      } */
+    .first-saleslist-edit{
+      background-color: #f2f2f2;
+      border: none;
+      width: 35px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    .second-saleslist-edit{
+      background-color: #ffffff;
+      border: none;
+      width: 20px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    
+    #customers-saleslist-edit tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers-saleslist-edit tr:hover {background-color: #d9d9d9;}
+  
+  
+    #customers-saleslist-edit th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #0A9AE3;
+      color: white;
+      
+    }
+    #customers-saleslist-edit tr > td {
+      text-align: center;
+      cursor: pointer;
+    
+    }
+    
+    .csv-saleslist-edit, .pdf-saleslist-edit, .copy-saleslist-edit{
+      height: 50px;
+      width: 20px;
+      margin: 10px;
+    }
+    
+    .logo-color-saleslist-edit{
+      background-color: #0A9AE3;
+      padding: 10px;
+      border-radius: 100px;
+      color: white;
+      font-size: xx-large;
+      margin-top: 50%;
+    }
+    
+    button{
+      margin: 3px;
+      cursor: pointer;
+    }
+    
+    .sales-list-buttons-saleslist-edit{
+      margin: .5px;
+      width: 10px;
+    }
+    .add-saleslist-edit{
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-decoration: none;
+      padding: 1px;
+      margin: 2px;
+      font-size:xx-small;
+      font-weight: 100;
+    }
+    
+    .update-saleslist-edit{
+      background-color: #0A9AE3;
+      border-radius: 6px;
+      border: #0A9AE3;
+      padding: 1px;
+      color: white;
+      text-decoration: none;
+      margin: 2px;
+      font-size:xx-small;
+      font-weight: 100;
+  
+    }
+    
+    .delete-saleslist-edit{
+      background-color: #F91607;
+      border-radius: 6px;
+      padding: 1px;
+      text-decoration: none;
+      color: white;
+      margin: 2px;
+      font-size:xx-small;
+      font-weight: 100;
+    }
+    
+    .main-saleslist-edit-file{
+     
+      margin: 5%;
+    }
+     
+    
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .sales-main{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      background-color: white;
+    }
+    .sales-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0A9AE3;
+      color: white;
+      font-size: xx-large;
+      height: 75px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .table-customer{
+      height: 580px;
+      top: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      overflow: auto;
+    }
+    
+    
+    .table-customer-heading > th {
+      position: sticky;
+      top: 0;
+    }
+    
+    
+    .table-top{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .show-name{
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+    }
+    
+    .show-name > input{
+      margin-left: 10px;
+    }
+    
+    .search-name {
+      margin-right: 5%;
+    }
+    .search-name > input{
+      padding: 10px;
+      border: 1px solid #ABA4A4;
+      border-radius: 4px;
+      width: 300px;
+    }
+    .data-table > td > p{
+      text-align: left;
+      overflow: auto;
+    }
+    
+    
+    
+    
+    #customers {
+      border-collapse: collapse;
+      width: 100%;
+    
+    
+    }
+    
+    #customers td, #customers th {
+      padding: 8px;
+      
+    }
+    
+    
+      /* #customers input {
+        width: 90px;
+        height: 20px;
+        background-color:#ffffff ;
+        border: 0px solid;
+        text-align: center;
+      } */
+    .first{
+      background-color: #E6E6E6;
+    
+      border: none;
+      width: 90px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    .second{
+      background-color: #ffffff;
+      border: none;
+      width: 90px;
+      height: 20px;
+      border: 0px solid;
+      text-align: center;
+    }
+    
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #d9d9d9;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #0A9AE3;
+      color: white;
+      
+    }
+    #customers tr > td {
+      text-align: center;
+      cursor: pointer;
+    
+    }
+    
+    .csv, .pdf, .copy{
+      height: 50px;
+      width: 20px;
+      margin: 10px;
+    }
+    
+    .logo-color{
+      background-color: #0A9AE3;
+      padding: 10px;
+      border-radius: 100px;
+      color: white;
+      font-size: xx-large;
+      margin-top: 50%;
+    }
+    
+    button{
+      margin: 3px;
+      cursor: pointer;
+    }
+    
+    .sales-list-buttons{
+      margin: 5px;
+    }
+    .add{
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 6px;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px;
+      
+    }
+    
+    .update{
+      background-color: #0A9AE3;
+      border-radius: 6px;
+      border: #0A9AE3;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+    }
+    
+    .delete{
+      background-color: #F91607;
+      border-radius: 6px;
+      padding: 5px;
+      text-decoration: none;
+      color: white;
+      margin: 5px;
+    }
+    
+    .main-sales-file{
+     
+      margin: 5%;
+    }
+    
+    
+  }
