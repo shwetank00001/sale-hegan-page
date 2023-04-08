@@ -1,0 +1,34 @@
+.sales-listviewheader-main, .sales-listviewheader{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.sales-listviewheader-main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+.sales-listview-header-input{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+.sales-listview-header-input > input{
+
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 854px) {
+    .sales-listviewheader-main {
+        font-size: small;
+    }
+    .sales-listview-header-input > input{
+        display: flex;
+        align-items: center;
+        width: 70px;
+    }
+}
