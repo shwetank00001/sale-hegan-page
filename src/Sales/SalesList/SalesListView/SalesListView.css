@@ -235,11 +235,7 @@
     text-overflow: ellipsis; 
 }
   
-.action-button-sales-table{
-    display: flex;
-    justify-content: center;
-}
-  
+
 .action-button-sales-table > button{
 
   border-radius: 5px;

@@ -234,20 +234,7 @@
     overflow: hidden;
     text-overflow: ellipsis; 
 }
-  
-.action-button-sales-table{
-    display: flex;
-    justify-content: center;
-}
-  
-.action-button-sales-table > button{
 
-  border-radius: 5px;
-  border: #0A9AE3;
-  width: 50px;
-  padding: 2px;
-  border: 2px solid black
-}
 
 .view-sale-list{
   background: #0A9AE3;
