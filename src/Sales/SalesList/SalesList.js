@@ -6,7 +6,32 @@ import { FaRegFilePdf } from "react-icons/fa";
 import { FaFileCsv, FaRegCopy } from "react-icons/fa";
 import Swal from "sweetalert2";
 
+import data from './data'
+
 export default function SalesList (){
+
+  const ele = data.map(function(item){
+    return(
+      <tr>
+                <td><span className='span-width'>{item.id + 1}</span></td>
+                <td><span className='span-width'>{item.date}</span></td>
+                <td><span className='span-width'>{item.invoice}</span></td>
+                <td><span className='span-width'>{item.fName}</span></td>
+                <td><span className='span-width'>{item.region}</span></td>
+                <td><span className='span-width'>{item.type }</span></td>
+                <td><span className='span-width'>{item.amt}</span></td>
+                <td className='action-button-sales-table'>
+                 
+                  <button className='edit-sale-list'>Edit</button>
+                  <button className='view-sale-list'>View</button>
+                  <button className='del-sale-list'>Delete</button>
+                </td>
+
+      </tr>
+    )
+  })
+
+  console.log(data)
 
 
 return (
@@ -46,20 +71,7 @@ return (
                 <th>Action</th>
               </tr>
 
-              <tr>
-                <td>1</td>
-                <td>Date</td>
-                <td id='appadd'>SHWETANK</td>
-                <td>SHWETANK</td>
-                <td><span className='span-width'>SHWETANKqqqqqqqqqqqqqqqqqqqqqqqqq</span></td>
-                <td>SHWETANK</td>
-                <td>SHWETANK</td>
-                <td className='action-button-sales-table'>
-                    <button>Add</button>
-                    <button>Edit</button>
-                    <button>Del</button>
-                </td>
-              </tr>
+                {ele}
 
               
             </table>

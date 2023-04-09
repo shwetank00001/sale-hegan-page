@@ -25,7 +25,6 @@
 @media screen and (max-width: 854px) {
     .sales-reportheader-main {
         font-size: small;
-        width: 100%;
     }
     .sales-report-header-input > input{
         display: flex;
