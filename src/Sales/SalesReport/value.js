@@ -83,7 +83,7 @@ const value = [
         discount:10,
         sgst:5,
         csgst:7,
-        igst:10,
+        igst:70,
         cess:10,
         tax:50,
         cnamt:80,
